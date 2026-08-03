@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ site.locale | default: 'zh-CN' }}">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/academic-home.css' | relative_url }}">
+</head>
+<body>
+  <header class="nav"><a class="logo" href="{{ '/' | relative_url }}">{{ site.author.initials | default: 'YL' }}</a><nav>
+    <a href="#about">关于</a><a href="#research">研究</a><a href="#publications">论文</a><a href="#experience">经历</a>
+    <a href="{{ '/cv/' | relative_url }}">CV</a></nav><button id="lang">EN</button>
+  </header>
+  <main>
+    <section class="hero wrap"><div><p class="kicker"><i></i><span data-zh="机器人研究者 · 博士研究生" data-en="Robotics Researcher · PhD Student">机器人研究者 · 博士研究生</span></p>
+      <h1 data-zh="让机器人在<br><em>真实世界</em>里工作。" data-en="Building robots<br>for the <em>real world.</em>">让机器人在<br><em>真实世界</em>里工作。</h1>
+      <p class="lead" data-zh="{{ site.author.bio_zh | default: site.author.bio }}" data-en="{{ site.author.bio }}">{{ site.author.bio_zh | default: site.author.bio }}</p>
+      <div class="actions"><a class="dark" href="#publications" data-zh="查看研究成果 ↘" data-en="View my work ↘">查看研究成果 ↘</a><a href="mailto:{{ site.author.email }}" data-zh="联系我" data-en="Get in touch">联系我</a></div>
+    </div><div class="visual"><div class="orbit a"></div><div class="orbit b"></div><div class="core"><b>{{ site.author.initials | default: 'YL' }}</b><small>ROBOTICS<br>+ CONTROL</small></div><i class="dot d1"></i><i class="dot d2"></i></div></section>
+    <div class="ticker">AERIAL ROBOTICS　✦　ROBOT CONTROL　✦　AUTONOMOUS SYSTEMS　✦　AERIAL MANIPULATION　✦　AERIAL ROBOTICS</div>
+    <section id="about" class="section wrap two"><div><p class="num">01 / ABOUT</p><h2 data-zh="研究始于好奇，<br>落于现实。" data-en="Curiosity driven.<br>Reality grounded.">研究始于好奇，<br>落于现实。</h2></div><div class="copy">{{ content }}<div class="links"><a href="{{ '/cv/' | relative_url }}">CV ↗</a>{% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}">SCHOLAR ↗</a>{% endif %}{% if site.author.github %}<a href="https://github.com/{{ site.author.github }}">GITHUB ↗</a>{% endif %}</div></div></section>
+    <section id="research" class="section inverse"><div class="wrap"><p class="num">02 / RESEARCH</p><div class="head"><h2 data-zh="研究方向" data-en="Research interests">研究方向</h2><p data-zh="从理论到系统，从仿真到实机。" data-en="From theory to systems, simulation to hardware.">从理论到系统，从仿真到实机。</p></div><div class="cards">
+      {% for item in site.data.research %}<article><span>{{ item.icon }}</span><small>0{{ forloop.index }}</small><h3 data-zh="{{ item.title_zh }}" data-en="{{ item.title_en }}">{{ item.title_zh }}</h3><p data-zh="{{ item.description_zh }}" data-en="{{ item.description_en }}">{{ item.description_zh }}</p></article>{% endfor %}
+    </div></div></section>
+    <section id="publications" class="section wrap"><p class="num">03 / PUBLICATIONS</p><div class="head light"><h2 data-zh="代表性论文" data-en="Selected publications">代表性论文</h2><div class="filters"><button class="on" data-filter="all">ALL</button><button data-filter="manuscripts">JOURNAL</button><button data-filter="conferences">CONFERENCE</button></div></div><div class="pubs">
+      {% assign publications = site.publications | sort: 'date' | reverse %}{% for post in publications %}<article class="pub" data-type="{{ post.category | default: 'conferences' }}"><b class="year">{{ post.date | date: '%Y' }}</b><div><p class="venue">{{ post.venue }} · {{ post.category }}</p><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3><p class="authors">{{ post.authors | default: post.citation }}</p><div class="plinks">{% if post.paperurl %}<a href="{{ post.paperurl }}">PDF ↗</a>{% endif %}{% if post.codeurl %}<a href="{{ post.codeurl }}">CODE ↗</a>{% endif %}{% if post.videourl %}<a href="{{ post.videourl }}">VIDEO ↗</a>{% endif %}</div></div></article>{% endfor %}
+    </div></section>
+    <section id="experience" class="section exp"><div class="wrap"><p class="num">04 / EXPERIENCE</p><div class="head light"><h2 data-zh="学术经历" data-en="Experience">学术经历</h2></div>{% for item in site.data.experience %}<article class="timeline"><span>{{ item.period }}</span><div><h3 data-zh="{{ item.title_zh }}" data-en="{{ item.title_en }}">{{ item.title_zh }}</h3><p data-zh="{{ item.detail_zh }}" data-en="{{ item.detail_en }}">{{ item.detail_zh }}</p></div></article>{% endfor %}</div></section>
+  </main>
+  <footer><div class="wrap two"><div><p class="num">LET'S CONNECT</p><h2 data-zh="有想法？<br>一起聊聊。" data-en="Have an idea?<br>Let's talk.">有想法？<br>一起聊聊。</h2></div><div class="contact"><a href="mailto:{{ site.author.email }}">{{ site.author.email }} ↗</a><p>{{ site.author.employer }}<br>{{ site.author.location }}</p></div></div><div class="wrap foot">© {{ 'now' | date: '%Y' }} {{ site.name }} <span>POWERED BY JEKYLL + ACADEMIC PAGES</span></div></footer>
+  <script src="{{ '/assets/js/academic-home.js' | relative_url }}"></script>
+</body></html>

@@ -7,16 +7,16 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
+locale                   : "zh-CN"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Your Name / Site Title"
+title                    : "林屿 · Robotics Researcher"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+name                     : &name "林屿"
+description              : &description "空中机器人、机器人控制与自主系统研究"   # Update this with a general description of your site, this is the default if not overridden by a page
+url                      : "https://sijizhimeng.github.io"
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "sijizhimeng/sijizhimeng.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,13 +24,15 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  initials         : "LY"
+  name             : "林屿"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "I work on aerial robotics, manipulator control, and autonomous systems."
+  bio_zh           : "你好，我是林屿。我研究空中机器人、机械臂控制与自主系统，关注机器人如何在不确定环境中安全、灵巧地完成任务。"
+  location         : "中国 · 上海"
+  employer         : "某某大学 · 智能机器人实验室"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "yourname@university.edu"
 
   # Academic websites
   academia         : # URL
@@ -51,7 +53,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "sijizhimeng"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 

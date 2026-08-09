@@ -11,3 +11,5 @@ end
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
+# Ruby 2.7 compatibility: Nokogiri 1.16+ requires Ruby 3.0 or newer.
+gem 'nokogiri', '~> 1.15.7'

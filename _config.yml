@@ -7,12 +7,12 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "zh-CN"
+locale                   : "en"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "林屿 · Robotics Researcher"
+title                    : "Mengyu Ji · Ph.D. Student"
 title_separator          : "-"
-name                     : &name "林屿"
-description              : &description "空中机器人、机器人控制与自主系统研究"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "Mengyu Ji"
+description              : &description "Research in aerial manipulation, robot manipulation, and multi-robot collaboration"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : "https://sijizhimeng.github.io"
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -23,27 +23,28 @@ repository               : "sijizhimeng/sijizhimeng.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  initials         : "LY"
-  name             : "林屿"
+  avatar           : "profile.jpg"
+  initials         : "MJ"
+  name             : "Mengyu Ji"
+  name_zh          : "季梦玉"
   pronouns         : # example: "she/her"  
-  bio              : "I work on aerial robotics, manipulator control, and autonomous systems."
-  bio_zh           : "你好，我是林屿。我研究空中机器人、机械臂控制与自主系统，关注机器人如何在不确定环境中安全、灵巧地完成任务。"
-  location         : "中国 · 上海"
-  employer         : "某某大学 · 智能机器人实验室"
+  bio              : "I work on aerial manipulation, robot manipulation, and multi-robot collaboration."
+  bio_zh           : "你好，我是季梦玉。我的研究方向包括空中机器人、机器人操作与多机器人协作。"
+  location         : "Hangzhou, China"
+  employer         : "Westlake University / Zhejiang University"
   uri              : # URL
-  email            : "yourname@university.edu"
+  email            : "jimengyu@westlake.edu.cn"
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?hl=zh-CN&user=H641uncAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0009-0007-3311-0758"
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           :
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
@@ -59,7 +60,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          :
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -68,7 +69,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "mengyu-ji-4a772b338"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -99,7 +100,6 @@ breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -188,6 +188,7 @@ exclude:
   - LICENSE
   - local
   - log
+  - markdown_generator
   - node_modules
   - package.json*
   - Rakefile

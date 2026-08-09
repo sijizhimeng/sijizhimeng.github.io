@@ -1,14 +1,13 @@
 ---
-title: "Adaptive Trajectory Tracking for Multirotors with Dynamic Payloads"
+title: "Avian-Inspired High-Precision Tracking Control for Aerial Manipulators"
 collection: publications
-category: conferences
-permalink: /publication/2024-adaptive-tracking
+category: manuscripts
+permalink: /publication/2024-avian-inspired-tracking-control
 date: 2024-01-01
-venue: "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
-authors: "Coauthor Name, Yu Lin, Advisor Name"
-paperurl: "#"
-codeurl: "#"
-citation: "Coauthor Name, Yu Lin, and Advisor Name. Adaptive Trajectory Tracking for Multirotors with Dynamic Payloads. IROS, 2024."
+venue: "Nonlinear Dynamics"
+authors: "Mengyu Ji, Jinhao Shen, Hui Cao*, and Shiyu Zhao"
+paperurl: "https://link.springer.com/article/10.1007/s11071-024-10584-0"
+citation: "M. Ji, J. Shen, H. Cao*, and S. Zhao. Avian-Inspired High-Precision Tracking Control for Aerial Manipulators. Nonlinear Dynamics, 2024."
 ---
 
-在这里填写论文摘要、项目介绍、视频或 BibTeX。
+An avian-inspired control approach for high-precision end-effector pose stabilization and trajectory tracking with aerial manipulators.
